@@ -1,0 +1,49 @@
+<html>
+<head>
+    <script>
+        let exports = {};</script>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<header><h3>Ping pong leader board</h3></header>
+<div class="container">
+    <!--    <div class="left">-->
+    <!--        <ul class="vertical menu">-->
+    <!--            <li><a onclick="multiplyNodes()">Create board</a></li>-->
+    <!--            <li><a href="">Match Result</a></li>-->
+    <!--            <li><a href="">Board</a></li>-->
+    <!--        </ul>-->
+    <!--    </div>-->
+    <div class="right">
+        <div id="top">
+            <div id="button_group">
+                <div>
+                    <button onclick="showCreateTemplate()">Create</button>
+                </div>
+                <div>
+                    <button onclick="showWinnerTemplate()">Winner</button>
+                </div>
+                <div>
+                    <button onclick="showDashboard()">Dashboard</button>
+                </div>
+            </div>
+            <div id="create" class="create">
+                <label for="names">Participants</label>
+                <textarea id="names" style="min-height: 64px"></textarea>
+                <div>
+                    <button onclick="createNodes(document.getElementById('names').value)">Generate</button>
+                </div>
+            </div>
+            <div id="winner">
+                winner
+            </div>
+            <div id="dashboard">
+                dashboard
+            </div>
+        </div>
+        <main id="main"></main>
+    </div>
+</div>
+</body>
+</html>
